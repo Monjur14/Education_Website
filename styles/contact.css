@@ -1,0 +1,137 @@
+
+.contact__container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: var(--color-bg1);
+    position: relative;
+    padding: 4rem;
+    border-radius: 1rem;
+    gap: 5rem;
+    height: 60vh;
+}
+.contact__section{
+    margin-top: 7rem;
+    margin-bottom: 8rem;
+}
+aside{
+    background-color: var(--color-primary);
+    position: relative;
+    bottom: 8rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.contact__img{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.contact__container p{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.contact__social__div{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.contact__social__div i{
+    font-size: 0.9rem;
+}
+.contact__social__icons span{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--color-bg);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+.contact__social__icons span i{
+    font-size: 0.9rem;
+}
+form{
+    width: 85%;
+}
+.form__name{
+    display: flex;
+    gap: 1.2rem;
+}
+.form__name input{
+width: 50%;
+padding: 0.7rem;
+background-color: var(--color-bg);
+color: white;
+}
+.form__name input::placeholder{
+    color: #ccc;
+}
+.email{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    background-color: var(--color-bg);
+    color: white;
+}
+input::placeholder{
+    color: #ccc;
+}
+textarea{
+    width: 100%;
+    display: block;
+    padding: 0.7rem;
+    background-color: var(--color-bg);
+    margin-bottom: 1rem;
+    color: white;
+}
+textarea::placeholder{
+    color: #ccc;
+}
+.form__btn{
+   cursor: pointer;
+}
+@media (max-width: 1080px){
+    .contact__container{
+        height: auto;
+        padding: 1.5rem;
+        gap: 2.5rem;
+    }
+    aside{
+        bottom: 0;
+        word-wrap: break-word;
+    }
+    form{
+        align-self: center;
+    }
+    .new{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact__container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    form{
+        width: 100%;
+    }
+    .form__btn{
+        margin-bottom: 1.5rem;
+    }
+    aside{
+        margin-top: 1.5rem;
+    }
+    .new{
+        display: flex;
+    }
+}

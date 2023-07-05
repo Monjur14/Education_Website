@@ -1,0 +1,8 @@
+.second{
+    margin-top: 3rem;
+}
+@media screen and (max-width: 1080px) {
+    .courses-container article:nth-child(3){
+        display: block;
+    }
+}
